@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <center>
+      <h1>Cart: 0</h1>
+      <div class="flex">
+        <button id="showFive">show first 5</button>
+        <button id="showAll">show all</button>
+        <button id="menu">show cart</button>
+
+        <div class="modalka">
+          <img class="close_img" src="icons/close_modal.png" alt="" />
+          <h2>Корзина</h2>
+
+          <div class="item-container">
+
+            <div class="scrollable">
+              <div class="cart-item">
+  
+                <div class="left">
+                  <input type="checkbox">
+                  <img src="" alt="">
+                </div>
+  
+                <div class="mid">
+                  <span class="title">title</span>
+                  <div class="details">
+                    <div>
+                    <p>
+                      Продавец: <b>IKKI-DO'ST</b>   
+                    </p>
+                    <p>
+                      Продавец: <b>IKKI-DO'ST</b>
+                    </p>
+                  </div>
+  
+                    <div class="counter">
+                      <button>+</button>
+                      <input type="number" value="0">
+                      <button>-</button>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="right">
+                  <button>
+                    <img src="icons/trash.svg" alt="">
+                    delete
+                  </button>
+                  <span class="price">1 098 000 сум</span>
+                  <span class="sale-price">1 500 00</span>
+  
+                </div>
+  
+              </div>
+            </div>
+          </div>
+
+
+          <div class="total">
+            <div class="top">
+                <span>Total:</span>
+                <span id="total">1000$</span>
+            </div>
+
+            <button>Order</button>
+
+          </div>
+        </div>
+      </div>
+    </center>
+
+    <div class="container"></div>
+
+    <script src="./db.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
