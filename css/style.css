@@ -27,6 +27,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.modalka:hover {
+  position: scroll;
+}
 .modalka img {
   position: fixed;
   right: 0;
@@ -109,7 +112,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 10px;
+    padding: 20px 10px;
     gap: 10px;
 }
 
@@ -129,8 +132,8 @@
 }
 .cart-item .left img {
     all: unset;
-    width: 80px;
     height: 80px;
+    /* width: 80px; */
     background-color: gray;
     object-fit: cover;
 }
@@ -144,11 +147,16 @@
     justify-content: space-between;
     align-items: start;
 }
+.cart-item .mid .details .details_txt {
+  display: flex;
+  justify-content: start;
+  align-items:  start;
+}
 .cart-item .details .counter {
     display: flex;
     align-items: center;
     padding: 10px;
-    border: 1px solid #c4c4c4;
+    border: 1px solid #c4c4c4;  
 }
 .cart-item .counter button, 
 .cart-item .counter input { 
@@ -161,10 +169,20 @@
 .cart-item .counter button {
     cursor: pointer;
 }
+.cart-item .counter input {
+  width: 30px;
+}
 .cart-item .counter input::-webkit-outer-spin-button,
 .cart-item .counter input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+.counter_and_under_counter .under_counter {
+  color: gray;
+  padding-top: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-item .details b {
@@ -190,6 +208,11 @@
 }
 .cart-item .right button img {
     all: unset;
+}
+
+.cart-item .right .sale-price {
+  color: gray;
+  text-decoration: line-through;
 }
 
 
